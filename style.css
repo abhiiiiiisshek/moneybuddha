@@ -12,7 +12,7 @@
 .nav-link:hover{
     color: #2664eb !important;
     size: 2cm;
-    text-decoration: wavy;
+    
 }
 .btn-login-custom {
   /* Colors */
@@ -94,4 +94,107 @@
   height: 100%;
   object-fit: contain;
   transition: transform 0.1s ease-out; /* Smooths the movement */
+}
+/* ===============================
+PRODUCT SECTION STYLES
+================================== */
+
+.product-section {
+  background-color: #f8f9fa; /* A light grey background for the section */
+}
+
+/* Styling for the top row of simple cards */
+.feature-card {
+  background-color: white;
+  border-radius: 1rem; /* 16px */
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border: 1px solid #e9ecef;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.feature-card img {
+  height: 60px;
+  width: 60px;
+}
+/* Background for the top features row */
+.top-features-bg {
+  background-color: #f0f7ff; /* A very light blue */
+  padding: 3rem 0; /* Adds some space above and below the cards */
+}
+
+
+/* Styling for the "Credit Products" title */
+.section-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+/* Creates the decorative underline */
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #2563eb; /* Blue color */
+  border-radius: 2px;
+}
+
+/* Styling for the main grid of product cards */
+.product-card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border: 1px solid #e9ecef;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  height: 100%; /* Makes all cards in a row the same height */
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.product-icon {
+  height: 70px;
+  width: 70px;
+  margin: 0 auto 1rem auto;
+}
+
+.product-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #212529;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #6c757d;
+  flex-grow: 1; /* Pushes the link to the bottom */
+}
+
+.product-link {
+  color: #2563eb;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.product-link:hover {
+  text-decoration: underline;
 }
